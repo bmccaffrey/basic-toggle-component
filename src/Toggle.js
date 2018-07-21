@@ -5,6 +5,12 @@ export default class Toggle extends Component {
     on: false
   };
 
+  toggle = () => {
+    this.setState({
+      on: !this.state.on
+    });
+  };
+
   render() {
     return (
       <div>
