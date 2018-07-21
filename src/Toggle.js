@@ -14,7 +14,7 @@ export default class Toggle extends Component {
   render() {
     return (
       <div>
-        <button>Show/Hide</button>
+        <button onClick={this.toggle}>Show/Hide</button>
       </div>
     );
   }
