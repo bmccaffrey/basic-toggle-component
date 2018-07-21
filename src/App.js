@@ -11,10 +11,10 @@ class App extends Component {
           <h1 className="App-title">Welcome to React</h1>
         </header>
         <Toggle
-          render={text => (
+          render={({ on, toggle }) => (
             <div>
-              <h1>{text}</h1>
-              <button>Show / Hide</button>
+              {on && <h1>Show Me</h1>}
+              <button onClick={toggle}>Show / Hide</button>
             </div>
           )}
         />

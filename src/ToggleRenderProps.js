@@ -13,6 +13,13 @@ export default class Toggle extends Component {
 
   render() {
     const { render } = this.props;
-    return <div>{render('Generic Greeting')}</div>;
+    return (
+      <div>
+        {render({
+          on: this.state.on,
+          toggle: this.toggle
+        })}
+      </div>
+    );
   }
 }
